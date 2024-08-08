@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS answers;
+
+CREATE TABLE answers (
+    id TEXT PRIMARY KEY,
+    user_id TEXT NOT NULL,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    will_be INTEGER NOT NULL,
+    name TEXT DEFAULT NULL,
+    companion_name TEXT DEFAULT NULL,
+    drinks TEXT DEFAULT NULL,
+    custom_drink TEXT DEFAULT NULL,
+    rouse INTEGER DEFAULT NULL
+);
